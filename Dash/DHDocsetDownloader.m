@@ -712,6 +712,11 @@ static id singleton = nil;
         title = @"Apple API Reference";
         message = @"There is no Swift docset. The documentation for Swift can be found inside the Apple API Reference docset. Install it instead.";
     }
+    else if([feed.feedURL isEqualToString:@"http://kapeli.com/feeds/Swift.xml"])
+    {
+        title = @"Apple API Reference";
+        message = @"There is no Swift docset. The documentation for Swift can be found inside the Apple API Reference docset. Install it instead.";
+    }
     else if([@[@"http://kapeli.com/feeds/OS_X.xml", @"http://kapeli.com/feeds/macOS.xml", @"http://kapeli.com/feeds/watchOS.xml", @"http://kapeli.com/feeds/iOS.xml", @"http://kapeli.com/feeds/tvOS.xml"] containsObject:feed.feedURL])
     {
         title = @"Apple API Reference";
